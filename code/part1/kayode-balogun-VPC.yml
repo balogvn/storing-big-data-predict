@@ -123,9 +123,9 @@ Resources:
       VpcId: !Ref VPC
       SecurityGroupIngress:
         - CidrIp: 192.168.0.0/16
-          FromPort: 0
+          FromPort: 1
           IpProtocol: tcp
-          ToPort: 65535
+          ToPort: 65534
       Tags:
         - Key: Name
           Value: DE-Extract-FileGatewaySG
