@@ -71,8 +71,8 @@ Resources:
   WindowsInstanceRolePolicy:
     Type: 'AWS::IAM::Policy'
     Properties:
-      DeletionPolicy: Delete
-      PolicyName: !Sub Windows-client-${AWS::StackName}
+      
+      PolicyName:  !Sub Windows-client-${AWS::StackName}
       PolicyDocument:
         Version: 2012-10-17
         Statement:
@@ -87,7 +87,7 @@ Resources:
   WindowsInstanceRole:
     Type: 'AWS::IAM::Role'
     Properties:
-      DeletionPolicy: Delete
+      
       AssumeRolePolicyDocument:
         Version: 2012-10-17
         Statement:
